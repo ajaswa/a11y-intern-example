@@ -57,7 +57,7 @@ define(function (require) {
         },
         'axe core': function () {
             return this.remote
-                .get(require.toUrl('good.html'))
+                .get(require.toUrl('bad.html'))
                 .sleep(1000)
                 .execute(function() {
                     var script = document.createElement('script');
