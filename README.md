@@ -14,7 +14,7 @@ If you have the same setup as mine you can just run `npm test`.
 
 ## a11y tests
 
-Right now I have both the [Google Chrome Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools) (ADT) and [Deque Labs aXe core](https://github.com/dequelabs/axe-core) working with The Intern. Other test suites should be able to be run but there are some interesting things I had to do in the [tests](https://github.com/ajaswa/a11y-intern-example) to get the a11y suites working.
+Right now I have both the [Google Chrome Accessibility Developer Tools](https://github.com/GoogleChrome/accessibility-developer-tools) (ADT) and [Deque Labs aXe core](https://github.com/dequelabs/axe-core) working with The Intern. Other test suites should be able to be run but there are some interesting things I had to do in the [tests](https://github.com/ajaswa/a11y-intern-example/blob/master/tests/functional/a11y-spec.js) to get the a11y suites working.
 
 ## How it works
 
