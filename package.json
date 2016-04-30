@@ -1,0 +1,24 @@
+{
+  "name": "a11y-intern-example",
+  "version": "0.0.1",
+  "authors": [
+    "Andrew Jaswa <ajaswa@gmail.com>"
+  ],
+  "license" : "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ajaswa/a11y-intern-example.git"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "pretest": "selenium-server -p 4444 &> /dev/null &",
+    "test": "intern-runner config=tests/intern; npm run-script test-cleanup",
+    "test-cleanup": "curl --silent -o /dev/null 'http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer'"
+  },
+  "devDependencies": {
+    "accessibility-developer-tools": "https://github.com/GoogleChrome/accessibility-developer-tools.git#stable",
+    "axe-core": "^1.1.1",
+    "intern": "^3.1.1"
+  }
+}
